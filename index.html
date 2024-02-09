@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musiktechnik TS</title>
+    <title>WS Media</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="image/png" href="logo.png">
     <meta name="title" content="Musiktechnik TS">
-    <meta name="og:image" content="https://www.pr-boutique.eu/wp-content/uploads/2021/02/web-designer-how-to-become-pic-by-rawpixel.jpg">
+    <meta name="og:image"
+        content="https://www.pr-boutique.eu/wp-content/uploads/2021/02/web-designer-how-to-become-pic-by-rawpixel.jpg">
     <meta name="description" content="WS Media">
-    <meta name="keywords" content="Ihr Profesioneller Webdesigner">
+    <meta name="keywords" content="Ihr Profesioneller Webdesigner Traunstein Programmierung ">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Deutsch">
 
 </head>
 
 <body>
-    <div class="start" id="start-section">
+    <section class="start" id="start-section">
         <div class="anim">
             <h1>
                 WS Media
             </h1>
             <p>
                 Ihr Profesioneller Webdesigner
+                <noscript>Pleas Enable Javascript</noscript>
             </p>
             <button
                 onclick="document.getElementById('Leistungen-section').scrollIntoView({behavior:'smooth',block:'center'})">
@@ -33,8 +35,8 @@
                 </svg>
             </button>
         </div>
-    </div>
-    <div class="middle-w" id="Leistungen-section" style="transform: translateX(50vw);">
+    </section>
+    <section class="middle-w" id="Leistungen-section" style="transform: translateX(50vw);background-color: #B098A4;">
         <h1>Leistungen</h1>
         <ul>
             <li>
@@ -56,30 +58,59 @@
                 Updates auf Anfrage
             </li>
             <li>
-                Alle Sonderwünsche sind natürlich auch Willkommen 😁
+                Sonderwünsche sind natürlich auch Willkommen 😁
+            </li>
+            <li>
+                Programmiersprachen HTML, CSS, C#, C++ & C, JS, NODE JS 
             </li>
         </ul>
-        <button onclick="document.getElementById('Kontakt-section').scrollIntoView({behavior:'smooth',block:'center'})">
+        <button onclick="document.getElementById('preis-section').scrollIntoView({behavior:'smooth',block:'center'})">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                 <path
                     d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" />
             </svg>
         </button>
-    </div>
-    <div class="middle-b" id="Kontakt-section" style="transform: translateX(20vw);">
+    </section>
+    <section style="background-color: #7DBBC3;" class="middle-w" id="preis-section">
+        <div class="anim">
+            <h1>
+                Preise 💶
+            </h1>
+            <p>Unsere Kunden können mit einem Preis von <b>400€</b> bis <i>1500€</i> je nach größe der Website rechnen.
+            </p>
+            <p>Sie können mit uns einfach ein Gespräch über <b
+                    onclick="document.getElementById('Kontakt-section').scrollIntoView({behavior:'smooth',block:'center'})"
+                    style="cursor: pointer;">
+                    E-Mail oder Telephon</b> vereinbaren.</p>
+            <button
+                onclick="document.getElementById('Kontakt-section').scrollIntoView({behavior:'smooth',block:'center'})">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path
+                        d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="middle-b" id="Kontakt-section" style="transform: translateX(20vw);">
         <h1>Kontakt</h1>
         <p class="align-center">
             <a href="mailto:ManuelWestermeier111@gmail.com">ManuelWestermeier111@gmail.com</a>
         </p>
-        <!--<p class="align-center">
+        <p class="align-center">
             <a href="tel:XXXXXXXX">XXXXXXXX</a>
-        </p>-->
+        </p>
         <button onclick="document.getElementById('start-section').scrollIntoView({behavior:'smooth',block:'center'})">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                 <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
             </svg>
         </button>
-    </div>
+
+        <p style="transform: translateY(20dvh);">
+            <a href="impressum.html">Impressum</a>
+            |
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+    </section>
 
     <div class="menu">
         <button class="menu-button"
@@ -89,6 +120,10 @@
         <button class="menu-button"
             onclick="document.getElementById('Leistungen-section').scrollIntoView({behavior:'smooth',block:'center'})">
             <b>Leistungen</b>
+        </button>
+        <button class="menu-button"
+            onclick="document.getElementById('preis-section').scrollIntoView({behavior:'smooth',block:'center'})">
+            <b>Preise</b>
         </button>
         <button class="menu-button"
             onclick="document.getElementById('Kontakt-section').scrollIntoView({behavior:'smooth',block:'center'})">

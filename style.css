@@ -183,3 +183,9 @@ button:hover {
         overflow: hidden;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .start {
+        background-size: 150vmax;
+    }
+}
